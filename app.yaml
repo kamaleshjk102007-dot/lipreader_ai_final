@@ -1,0 +1,10 @@
+runtime: python311
+
+env_variables:
+  API_URL: https://your-backend-url.herokuapp.com
+  PYTHONUNBUFFERED: 1
+
+handlers:
+- url: /.*
+  script: auto
+

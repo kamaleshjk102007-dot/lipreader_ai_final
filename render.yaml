@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: lipnet-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: API_URL
+        value: https://lipnet-backend.onrender.com
+
+  - type: web
+    name: lipnet-frontend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run frontend/app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: API_URL
+        value: https://lipnet-backend.onrender.com
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: true
+

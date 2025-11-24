@@ -1,0 +1,59 @@
+========================================
+  LIPNET DEPLOYMENT - GET HTTP LINK
+========================================
+
+YOUR APP IS READY TO DEPLOY!
+
+Follow these 3 simple steps:
+
+STEP 1: PUSH TO GITHUB
+-----------------------
+1. Create account at: https://github.com
+2. Create new repository: https://github.com/new
+   - Name it: lipnet-app
+   - Make it Public
+   - Don't add README
+
+3. Run these commands:
+   git add .
+   git commit -m "Deploy LipNet app"
+   git branch -M main
+   git remote add origin https://github.com/YOUR-USERNAME/lipnet-app.git
+   git push -u origin main
+
+STEP 2: DEPLOY TO STREAMLIT CLOUD
+----------------------------------
+1. Go to: https://share.streamlit.io
+2. Sign in with GitHub
+3. Click "New app"
+4. Select your repository: your-username/lipnet-app
+5. Main file: frontend/app.py
+6. Click "Deploy"
+
+STEP 3: GET YOUR HTTP LINK!
+----------------------------
+After 1-2 minutes, you'll get:
+
+https://your-app-name.streamlit.app
+
+THIS IS YOUR LIVE WEBSITE LINK!
+
+========================================
+WHAT YOUR APP WILL HAVE:
+========================================
+- LipNet icon (👄) in browser
+- Beautiful interface
+- Sign-in page
+- Upload video button
+- Realtime camera button
+- Run prediction button
+- Results display
+
+========================================
+QUICK START:
+========================================
+Run: setup_deployment.bat
+Then follow steps above!
+
+========================================
+
